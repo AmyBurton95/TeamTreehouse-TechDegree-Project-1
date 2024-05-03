@@ -5,7 +5,6 @@ name = input("<------  Enter Player Name:  ------>\n")
 print(f"<------  Welcome, {name} Welcome to the Number Guessing Game  ------>")
 start = input("<------  Would you like to play? Y/N  ------>\n").upper()
 
-attempts_list = []
 low = 1
 high = 10
 high_scores = []
@@ -51,7 +50,6 @@ def start_game(low, high):
                     print(f"<-  The mode of your guesses was: {statistics.mode(sorted_high_scores)}  ->")
                     print(sorted_high_scores)
                 break
-            attempts_list.append(guess)
             break
 
 
